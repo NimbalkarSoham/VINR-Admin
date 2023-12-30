@@ -40,6 +40,10 @@ const Nav = () => {
             className="black_btn">
               Create Blog
             </Link>
+            <Link href="/" 
+            className="black_btn">
+              Add image
+            </Link>
 
             <button type="button" onClick={signOut} className="outline_btn">Sign Out</button>
 
