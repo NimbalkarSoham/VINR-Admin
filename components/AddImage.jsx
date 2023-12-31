@@ -80,9 +80,9 @@ const AddImage = () => {
     }
 
   return (
-    <div className="bg-slate-300 w-fit p-3 m-3 rounded" id='img-input'>
+    <div className="bg-slate-300 w-[300px] sm:w-fit p-3 m-3 rounded" id='img-input'>
         <form onSubmit={handleAddImage} className='flex flex-col gap-3'>
-            <div className='flex flex-row gap-3'>
+            <div className='flex flex-col sm:flex-row gap-3'>
                 <div className="flex flex-col gap-1">
                     <p>Description</p>
                     <input type="text" placeholder='Description' name="description" id="description" onChange={(e) => setImgInfo({...imgInfo,description: e.target.value})} className=' px-3 py-2 rounded'/>
