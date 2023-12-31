@@ -130,10 +130,10 @@ const addBlog = () => {
     }
 
   return (
-    <section className='bg-white'>
-        <h1 className='font-extrabold text-4xl'>Create a new blog</h1>
+    <section className='bg-white p-4 rounded-md'>
+        <h1 className='font-extrabold mb-4 text-4xl'>Create a new blog</h1>
         <div className="tools flex flex-col gap-4">
-            <div className="details flex flex-row gap-4">
+            <div className="details flex flex-col sm:flex-row gap-4">
                 <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
                     <p>&#42;Title:</p>
                     <input type="text" className='px-4 border-[1px] border-gray-500 rounded' placeholder='Title for your blog' onChange={(e) => setBlogTitle({...blogTitle,title: e.target.value})}/>
@@ -180,7 +180,7 @@ const addBlog = () => {
         
         
         <div id='canvas' className="canvas flex flex-col items-center px-16">{content}</div>
-        <button onClick={handleBlogSubmit} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">{submitting ? `Creating..` : `Create`}</button>
+        <button onClick={handleBlogSubmit} className="text-white mt-4 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">{submitting ? `Creating..` : `Create`}</button>
     </section>
   )
 }
